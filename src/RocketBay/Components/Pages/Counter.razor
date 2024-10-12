@@ -1,0 +1,23 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private BrowserWindow Window = Electron.WindowManager.BrowserWindows.First();
+
+    private void IncrementCount()
+    {
+        createView();
+    }
+
+    private void createView()
+    {
+        Window.LoadURL("http://localhost:8001");
+        Window.LoadURL("https://google.com");
+        Window.LoadURL("http://localhost:8000");
+    }
+}
