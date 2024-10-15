@@ -10,4 +10,9 @@
 	<ItemGroup>
 		<PackageReference Include="ElectronNET.API" Version="23.6.2" />
 	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\lib\SDL2-CS\SDL2-CS.Core.csproj" />
+		<ProjectReference Include="..\..\lib\SDL3-CS\SDL3\SDL3.Core.csproj" />
+	</ItemGroup>
 </Project>
